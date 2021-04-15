@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manipulation example</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/app.js" defer></script>
 </head>
 
-<body>
+<body class="">
     <header>
         <h1>Enter student's information</h1>
         <button>Change Background Color</button>
     </header>
 
-    <form id="first-form" action="#" method="POST">
+    <form id="first-form">
         <div id="form-wrapper">
             <label>First Name:</label>
-            <input id="firstname" type="text">
+            <input id="firstname" type="text" autocomplete="off">
             <label>Last Name:</label>
-            <input id="lastname" type="text">
+            <input id="lastname" type="text" autocomplete="off">
             <label>Program Name:</label>
-            <input id="progName" type="text">
+            <input id="progName" type="text" autocomplete="off">
         </div>
         <div id="button-wrapper">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
     </form>
 
