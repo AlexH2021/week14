@@ -1,3 +1,39 @@
 body {
     background-color: tan;
 }
+
+#form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+#first-form {
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 600px) {
+    #form-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    #list-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    header {
+        display: flex;
+    }
+    header h1 {
+        flex: 1;
+    }
+    header button {
+        height: 100%;
+        margin: auto 0;
+    }
+}
